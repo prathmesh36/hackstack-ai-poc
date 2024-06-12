@@ -14,7 +14,7 @@ docstore = InMemoryDocumentStore()
 #docstore.write_documents([Document(content="Rome is the capital of Italy"), Document(content="Paris is the capital of France")])
 docstore.write_documents([Document(content=file_content)])
 
-generator = HuggingFaceLocalGenerator(model="google/flan-t5-large",
+generator = HuggingFaceLocalGenerator(model="google/flan-t5-small",
                                       task="text2text-generation",
                                       generation_kwargs={
                                         "max_new_tokens": 100,
